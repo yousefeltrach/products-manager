@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->enum('status',['active', 'in-active'])->default('active');
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
