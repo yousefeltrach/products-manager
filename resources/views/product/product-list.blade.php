@@ -1,6 +1,10 @@
 @extends('layouts.layout')
 @section('content')
 <div class="container">
-    <h1>Product List</h1>
+    <div class="card">
+        <div class="card-header">
+            Product List
+        </div>
+    </div>
 </div>
 @endsection
